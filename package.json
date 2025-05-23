@@ -1,5 +1,5 @@
 {
-	"name": "mavetic-fe-core",
+	"name": "@mavetic/mavetic-fe-core",
 	"description": "Core FE dependencies library",
 	"version": "0.0.1",
 	"packageManager": "pnpm@10.11.0",
