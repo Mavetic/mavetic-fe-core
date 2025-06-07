@@ -4,7 +4,8 @@
 	"version": "0.0.4",
 	"packageManager": "pnpm@10.11.0",
 	"scripts": {
-		"lint": "biome check --write"
+		"lint": "biome check --write",
+		"prepare": "husky"
 	},
 	"exports": {
 		"./tsconfig": "./tsconfig.base.json"
@@ -12,6 +13,10 @@
 	"dependencies": {
 		"react": "^19.1.0",
 		"react-dom": "^19.1.0"
+	},
+	"devDependencies": {
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.0"
 	},
 	"peerDependencies": {
 		"@biomejs/biome": "1.9.4",
@@ -21,6 +26,9 @@
 		"next": "15.3.1",
 		"typescript": "^5.8.3",
 		"vitest": "^3.1.2"
+	},
+	"lint-staged": {
+		"*.{js,jsx,ts,tsx,json}": ["biome check --write"]
 	},
 	"publishConfig": {
 		"registry": "https://npm.pkg.github.com"
