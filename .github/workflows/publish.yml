@@ -13,9 +13,9 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
 
-      - name: Setup .npmrc file
+      - name: Set package repo auth to .npmrc file
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ env.NODE_AUTH_TOKEN }}" >> .npmrc
+          echo -e "\n//npm.pkg.github.com/:_authToken=${{ env.NODE_AUTH_TOKEN }}" >> .npmrc
 
       - uses: pnpm/action-setup@v4.1.0
 
