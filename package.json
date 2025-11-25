@@ -1,7 +1,7 @@
 {
   "name": "@mavetic/mavetic-fe-core",
   "description": "Core FE dependencies library",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "packageManager": "pnpm@10.22.0",
   "scripts": {
     "lint": "biome check --write",
