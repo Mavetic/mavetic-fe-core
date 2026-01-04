@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
     steps:
       - uses: actions/checkout@v5
       - uses: pnpm/action-setup@v4.2.0
@@ -23,5 +25,3 @@ jobs:
       
       - name: Publish
         run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.AUTH_TOKEN}}
