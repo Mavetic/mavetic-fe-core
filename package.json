@@ -4,6 +4,10 @@
   "version": "0.0.15",
   "packageManager": "pnpm@10.22.0",
   "license": "MIT",
+  "files": [
+    "biome.json",
+    "tsconfig.base.json"
+  ],
   "scripts": {
     "lint": "biome check --write",
     "prepare": "husky"
