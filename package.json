@@ -22,9 +22,6 @@
       "biome check --write"
     ]
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Mavetic/mavetic-fe-core.git"
